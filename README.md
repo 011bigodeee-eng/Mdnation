@@ -37,3 +37,9 @@ npm run preview
 ## Certificados recebidos
 
 Incluídos: `IMG_7748.JPG.jpeg` (workshop de membros inferiores), `IMG_7747.JPG.jpeg` (ENAF) e `IMG_7746.JPG.jpeg` (Personal Faixa Preta). O responsável confirmou que o último também pertence ao Matheus Dias da MD Nation, apesar da diferença de nome no documento. Todos os originais foram preservados.
+
+## Abertura cinematográfica
+
+`src/components/MDNationIntro.jsx` e seu CSS controlam a abertura de 3,6 segundos, sem dependências adicionais de animação. Há 0,5 segundo inicial de tela preta, revelação da marca, luz nas letras, expansão e fade para a página. O bootstrap em `index.html` evita mostrar a página antes da montagem do React; um fallback libera o conteúdo se a montagem falhar.
+
+A chave `mdnation:intro:seen` do sessionStorage evita repetir a abertura na mesma sessão. Para rever em desenvolvimento, remova essa chave nas ferramentas do navegador e recarregue, ou use uma nova sessão. Com `prefers-reduced-motion: reduce`, a página abre imediatamente. O botão Pular introdução e a tecla Escape encerram a abertura; foco e rolagem são restaurados. Se o armazenamento estiver bloqueado, a abertura continua funcionando, mas pode repetir em outra navegação. A introdução não usa vídeo, serviços externos nem downloads adicionais de fontes.
