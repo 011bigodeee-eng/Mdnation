@@ -85,3 +85,21 @@
 .faq-item p{padding:0 26px 25px 55px;font-size:14px;line-height:1.85;color:#d0d4dc}
 .faq .section-label{color:#e1e3e8}
 @media(max-width:760px){.faq-item button{padding:20px 15px;gap:11px;font-size:13px;min-height:80px}.faq-item p{padding:0 18px 22px;font-size:13px}.faq-item button>svg{padding:6px;width:16px;height:16px}.faq-number{font-size:10px}.faq-grid>div>p{font-size:14px}}
+/* A simpler editorial portrait and a clearer professional introduction. */
+.about{gap:clamp(36px,6vw,90px);grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center}
+.about-image{padding:0;border-radius:28px;overflow:hidden;border:1px solid #ffffff20;box-shadow:0 24px 65px #00000050}
+.about-image:before{display:none}
+.about-image img{aspect-ratio:4/4.5;object-position:center 38%;border-radius:0;filter:none}
+.about-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#090b0ef2 0%,#090b0e55 17%,transparent 43%);pointer-events:none}
+.about-photo-caption{position:absolute;bottom:30px;left:30px;right:25px;z-index:1;border-left:3px solid #e13041;padding-left:17px}
+.about-photo-caption span{font-family:'Barlow Condensed';font-size:35px;font-weight:600;letter-spacing:1px;line-height:1}
+.about-photo-caption small{display:block;font-size:8px;letter-spacing:2px;color:#d2d5db;margin-top:9px}
+.about-copy h2{font-size:clamp(40px,4.4vw,72px);line-height:1.02;letter-spacing:-.5px}
+.about-copy .section-label{margin-bottom:27px}
+.about-copy>p.about-intro{font-size:17px;line-height:1.6;font-weight:500;color:#eef0f4;margin:26px 0 14px}
+.about-copy>p{font-size:14px;line-height:1.9;color:#b8bdc6;margin:0 0 26px;max-width:510px}
+.about-professional-details{display:flex;gap:30px;padding:23px 0;border-top:1px solid #ffffff20;border-bottom:1px solid #ffffff20;margin-bottom:28px}
+.about-professional-details>span{font-size:13px;font-weight:500;color:#f0f1f4}
+.about-professional-details small{display:block;color:#a5acb8;font-size:10px;margin-top:8px;font-weight:400}
+.about-instagram{font-size:10px;gap:14px}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:34px}.about-image{max-width:460px}.about-image img{aspect-ratio:1/1.05}.about-photo-caption{left:24px;bottom:24px}.about-photo-caption span{font-size:30px}.about-copy h2{font-size:clamp(40px,9vw,62px)}.about-copy>p.about-intro{font-size:16px}.about-copy>p{font-size:13px}.about-professional-details{gap:23px}.about-professional-details>span{font-size:12px}}
