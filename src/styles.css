@@ -55,3 +55,10 @@
 .signature-line{border-radius:999px;box-shadow:0 0 10px #c91f2c66}
 .menu-toggle{border-radius:50%}
 .menu-toggle:hover{background:#ffffff0a}
+.steps{gap:24px;border:0}
+.step,.step+.step{padding:0 0 25px;border:0;min-width:0}
+.step-visual{position:relative;width:100%;aspect-ratio:1;background-size:300% 100%;background-repeat:no-repeat;border-radius:22px;overflow:hidden;border:1px solid #ffffff20;box-shadow:0 10px 30px #00000035;margin-bottom:25px}
+.step-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#090b0e77,transparent 40%);pointer-events:none}
+.step-image-label{position:absolute;bottom:18px;left:18px;z-index:1;border:1px solid #ffffff30;border-radius:999px;background:#090b0eb3;backdrop-filter:blur(8px);padding:8px 12px;font-size:9px;letter-spacing:1.5px}
+.step-top{margin-bottom:18px}.step-top span{font-size:48px;color:#c3c5ca}
+@media(max-width:760px){.steps{gap:30px}.step+.step{padding-top:0;border:0}.step-visual{margin-bottom:20px;max-width:480px}.step p{max-width:100%}}
