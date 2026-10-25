@@ -23,3 +23,12 @@
   .hero-actions{margin-top:20px;gap:12px}
   .hero-signature{margin-top:20px}
 }
+/* Equal repeated groups keep the moving brand ribbon seamless. */
+.brand-strip{display:block;padding-inline:0}
+.brand-track{display:flex;width:max-content;animation:brand-scroll 28s linear infinite}
+.brand-group{display:flex;align-items:center;justify-content:space-around;gap:45px;min-width:100vw;flex-shrink:0;padding-inline:22.5px}
+.brand-strip .strip-outline{display:inline}
+.brand-strip .brand-group b{display:inline}
+@keyframes brand-scroll{to{transform:translateX(-50%)}}
+@media(max-width:760px){.brand-group{gap:25px;padding-inline:12.5px}.brand-track{animation-duration:22s}}
+@media(prefers-reduced-motion:reduce){.brand-track{animation:none}.brand-group{flex-wrap:wrap;min-width:0;width:100vw;white-space:normal;justify-content:center;gap:14px}.brand-group+ .brand-group{display:none}}
