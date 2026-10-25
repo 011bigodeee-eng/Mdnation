@@ -62,3 +62,12 @@
 .step-image-label{position:absolute;bottom:18px;left:18px;z-index:1;border:1px solid #ffffff30;border-radius:999px;background:#090b0eb3;backdrop-filter:blur(8px);padding:8px 12px;font-size:9px;letter-spacing:1.5px}
 .step-top{margin-bottom:18px}.step-top span{font-size:48px;color:#c3c5ca}
 @media(max-width:760px){.steps{gap:30px}.step+.step{padding-top:0;border:0}.step-visual{margin-bottom:20px;max-width:480px}.step p{max-width:100%}}
+.journey-card{isolation:isolate;min-height:430px;justify-content:space-between;padding:24px}
+.journey-visual{position:absolute;inset:0;z-index:-2;background-size:300% 100%;background-repeat:no-repeat;transition:transform .6s ease}
+.journey-card::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#090b0ef5 0%,#090b0e99 23%,transparent 64%,#090b0e88 100%)}
+.journey-card:hover .journey-visual{transform:scale(1.035)}
+.journey-card .result-index{color:#e0e1e5;text-shadow:0 1px 8px #000}
+.journey-caption{margin-top:auto;padding-top:180px}
+.journey-caption .ai-label{display:inline-block;border:1px solid #ffffff30;border-radius:999px;background:#090b0e88;padding:5px 8px;font-size:7px;letter-spacing:1px;color:#d7d9de;margin-bottom:12px}
+.journey-card h3{font-size:27px}.journey-card p{color:#b9bdc5;max-width:260px;font-size:11px}
+@media(max-width:760px){.journey-card{min-height:380px}.journey-caption{padding-top:170px}}

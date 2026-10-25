@@ -20,6 +20,12 @@ export const site = {
     ['Clareza nos treinos', 'Entenda o propósito de cada etapa do processo.'],
     ['Evolução acompanhada', 'Um olhar atento ao caminho que você está construindo.'],
   ],
+  journeyVisual: '/images/jornadas-ia.png',
+  journeys: [
+    { title: 'O ponto de partida', text: 'Toda jornada começa com a decisão de dar o primeiro passo.', alt: 'Ilustração por IA de uma pessoa chegando à academia com uma bolsa esportiva.' },
+    { title: 'A construção diária', text: 'Consistência é construída em cada treino, um dia de cada vez.', alt: 'Ilustração por IA de uma pessoa segurando um halter durante o treino.' },
+    { title: 'Uma nova perspectiva', text: 'Um caminho com propósito para olhar adiante.', alt: 'Ilustração por IA de uma pessoa olhando pela janela de uma academia.' },
+  ],
   credentials: [
     { image: '/images/IMG_7746.JPG.jpeg', title: 'Personal Faixa Preta', detail: 'Musculação Faixa Preta · 2025 · 15 horas', alt: 'Certificado de capacitação online Personal Faixa Preta em nome de Matheus Henrique Jesus Silva', height: 1662 },
     { image: '/images/IMG_7748.JPG.jpeg', title: 'Workshop de membros inferiores', detail: '08 de junho de 2025 · 8 horas', alt: 'Certificado do workshop de membros inferiores em nome de Matheus Henrique Dias Paulino' },
