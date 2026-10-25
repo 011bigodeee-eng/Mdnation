@@ -467,3 +467,19 @@
 .brand-track{animation-duration:34s}
 @media(max-width:760px){.brand-strip{padding-block:24px}.brand-group{gap:27px;padding-inline:13.5px}.ribbon-word{font-size:34px;gap:8px;letter-spacing:1.3px}.ribbon-word-index{font-size:6px}.ribbon-brand{font-size:24px;letter-spacing:3px}.ribbon-brand small{font-size:5px;letter-spacing:1px}.ribbon-spark{width:6px;height:6px}.brand-track{animation-duration:28s}}
 @media(prefers-reduced-motion:reduce){.brand-group{justify-content:center;gap:20px}.ribbon-word{font-size:25px}.ribbon-brand{font-size:23px}.ribbon-word-index{font-size:6px}}
+/* Floating navigation with a clear brand, section index and integrated action. */
+.header{height:100px;background:linear-gradient(180deg,#090b0ef2,#090b0e00);border-bottom:0;backdrop-filter:none;padding:12px 26px}
+.header-inner{position:relative;height:76px;max-width:1600px;padding:0 13px 0 20px;margin:auto;gap:22px;border:1px solid #ffffff24;border-radius:23px;background:linear-gradient(120deg,#232831ee,#11151def);box-shadow:0 12px 35px #00000040,inset 0 1px 0 #ffffff08;backdrop-filter:blur(20px)}
+.header-inner:after{content:'';position:absolute;left:25px;right:25px;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,#ec3c4f66,transparent);pointer-events:none}
+.header .logo{gap:12px}.header .logo-emblem{width:55px;height:55px;box-shadow:none}.header .logo-brand{font-size:29px;letter-spacing:1px}.header .logo-wordmark{gap:7px}.header .logo-byline{font-size:6px;letter-spacing:1.8px}
+.desktop-nav{padding:0;border:0;border-radius:0;background:none;gap:9px;align-self:stretch;align-items:center}
+.desktop-nav a{padding:14px 16px;border-radius:13px;gap:10px;line-height:1.2;font-size:12px;border-color:transparent}
+.nav-index{font-family:'Barlow Condensed';font-size:15px;color:#7f8fa8;transition:color .2s;line-height:1}
+.desktop-nav a:hover{background:#ffffff08;transform:none;border-color:#ffffff12}
+.desktop-nav a.nav-active{background:linear-gradient(120deg,#c91f2c1f,#c91f2c08);border-color:#ff657744;box-shadow:inset 0 -2px 0 #f34c63}
+.desktop-nav a.nav-active .nav-index,.desktop-nav a:hover .nav-index{color:#ff6077}
+.header-cta{border-radius:15px;min-height:50px;padding:6px 7px 6px 18px;gap:18px;box-shadow:inset 0 1px 0 #ffffff30,0 4px 20px #c91f2c20}.header-cta>svg{border-radius:10px;padding:9px;width:18px;height:18px}.header-cta-copy small{font-size:5px;letter-spacing:1.4px}.header-cta-copy>span{font-size:10px;letter-spacing:.8px}
+.mobile-nav{max-width:1600px;margin:9px auto 0;padding:12px 20px;background:#171d27f7;backdrop-filter:blur(20px);border:1px solid #ffffff25;border-radius:20px;box-shadow:0 15px 35px #00000044}
+.mobile-nav a{padding:16px 5px;border-bottom:1px solid #ffffff0a}.mobile-nav a:last-child{border-bottom:0}
+@media(min-width:761px) and (max-width:1100px){.header{padding:10px 18px}.header-inner{padding:0 13px;gap:14px}.desktop-nav{gap:2px}.desktop-nav a{padding:13px 10px;font-size:11px;gap:7px}.header .logo-brand{font-size:25px}.header .logo-emblem{width:48px;height:48px}.header .logo-byline{font-size:5px;letter-spacing:1.5px}.header-cta{padding-left:13px;gap:10px}.header-cta-copy>span{font-size:9px}}
+@media(max-width:760px){.header{height:86px;padding:8px 10px}.header-inner{height:68px;padding:0 12px;border-radius:19px;gap:12px}.header .logo-emblem{width:47px;height:47px}.header .logo-brand{font-size:27px}.header .logo-byline{font-size:5px;letter-spacing:1.5px}.header .logo{gap:10px}.menu-toggle{display:grid;place-items:center;background:#ffffff06;border:1px solid #ffffff20;border-radius:13px;width:42px;height:42px;padding:8px}.menu-toggle svg{width:21px;height:21px}.mobile-nav{margin-top:8px;padding:10px 18px}.header-inner:after{left:20px;right:20px}.hero{padding-top:86px}.hero-photo{top:86px}}
