@@ -266,3 +266,41 @@
 .journey-gallery-bottom>span{display:flex;gap:9px;align-items:center;color:#ced3dd;font-size:8px;letter-spacing:1.4px;flex-shrink:0}.journey-gallery-bottom p{font-size:9px;color:#a6afbe}
 @media(max-width:1000px){.results .section-heading{display:block}.results .section-heading>p{margin-top:25px}.journey-gallery{gap:12px}.journey-gallery .journey-card{padding:18px}.journey-big-number{font-size:60px}.journey-gallery h3{font-size:28px}}
 @media(max-width:760px){.results .section-heading h2{font-size:clamp(36px,9vw,58px)}.journey-selector{display:grid;grid-template-columns:1fr;gap:8px}.journey-selector button{padding:12px 16px;font-size:12px;justify-content:flex-start}.journey-gallery{display:block}.journey-gallery .journey-card{display:none;min-height:470px;padding:24px}.journey-gallery .journey-selected{display:flex}.journey-gallery .journey-caption{padding-top:170px}.journey-gallery h3{font-size:35px}.journey-big-number{font-size:80px}.journey-gallery-bottom{align-items:flex-start;flex-direction:column;gap:12px}.journey-gallery-bottom p{font-size:9px}.journey-gallery .journey-caption p{font-size:13px}}
+/* Connected methodology with image-led cards. */
+.methodology{background:radial-gradient(ellipse at 50% 0%,#c91f2c15,transparent 60%),#11151b}
+.methodology .container{max-width:1380px;width:calc(100% - 96px)}
+.methodology .section-heading h2{font-size:clamp(40px,4.6vw,70px);line-height:1.02}.methodology .section-heading>p{color:#c0c8d5;font-size:13px}
+.method-route{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:22px}
+.method-route>span{position:relative;display:flex;align-items:center;gap:12px;font-size:9px;letter-spacing:2px;color:#cad1dd}
+.method-route>span:before{content:'';width:9px;height:9px;border:2px solid #ff5366;border-radius:50%;box-shadow:0 0 14px #ed334766;flex-shrink:0}
+.method-route>span:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#f0445766,#ffffff15);margin-left:10px}
+.steps{gap:24px;align-items:stretch}
+.steps .step,.steps .step+.step{padding:0;border:1px solid #ffffff22;border-radius:26px;overflow:hidden;background:linear-gradient(145deg,#252b35,#151921);box-shadow:0 15px 40px #00000025;transition:transform .3s,border-color .3s,box-shadow .3s}
+.steps .step:hover{transform:translateY(-6px);border-color:#ec405577;box-shadow:0 18px 40px #00000044,0 0 25px #c91f2c10}
+.steps .step-visual{aspect-ratio:1.2;max-width:none;margin:0;border:0;border-radius:0;box-shadow:none}
+.steps .step-visual:after{background:linear-gradient(0deg,#202630,transparent 45%)}
+.step-content{position:relative;padding:0 26px 27px;margin-top:-20px}
+.step-content .step-top{margin-bottom:15px;align-items:center}.step-content .step-top>span:first-child{font-size:68px;font-weight:600;color:#f0f2f6;line-height:1;text-shadow:0 3px 15px #00000040}
+.step-content .step-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid #ff5c6d55;background:linear-gradient(145deg,#d42b3f33,#c91f2c0a)}
+.step-content .step-icon svg{color:#ff5b6e;width:24px;height:24px}
+.step-content h3{font-size:34px;letter-spacing:.5px;margin-bottom:13px}.step-content p{font-size:13px;line-height:1.85;color:#c2cbd9;max-width:100%;min-height:72px}
+.step-link{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #ffffff18;padding-top:18px;margin-top:22px;font-size:7px;letter-spacing:1px;color:#e8ebf1;min-height:44px}.step-link svg{color:#ff5265;flex-shrink:0}
+.methodology .editorial-note{text-align:center;font-size:10px!important;color:#a8b1c1;margin-top:25px}
+/* A single cohesive benefits panel with four clear pillars. */
+.benefits{max-width:1380px;width:calc(100% - 96px);gap:0;padding:0;margin-block:85px;border:1px solid #ffffff20;border-radius:30px;overflow:hidden;background:#141820;grid-template-columns:.9fr 1.1fr;align-items:stretch}
+.benefits-intro{position:relative;isolation:isolate;overflow:hidden;padding:55px 40px;background:radial-gradient(ellipse at 0% 100%,#c91f2c40,transparent 75%),linear-gradient(145deg,#252a33,#151820)}
+.benefits-intro:after{content:'';position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(125deg,transparent 0,transparent 65px,#ffffff05 65px,#ffffff05 66px)}
+.benefits-intro h2{font-size:clamp(40px,4.2vw,65px);line-height:1.04}.benefits-intro h2 em{color:#f33c52}.benefits-intro .section-label{font-size:7px;letter-spacing:1.3px}
+.benefits .benefits-intro>p{color:#c6cdd9;font-size:14px;margin:25px 0}
+.benefits-backdrop{position:absolute;bottom:-45px;right:-15px;font-family:'Barlow Condensed';font-size:260px;line-height:1;font-weight:800;color:transparent;-webkit-text-stroke:1px #ffffff09;z-index:-1;pointer-events:none}
+.benefits-signoff{display:block;font-size:7px;letter-spacing:2px;color:#e68a97;margin-top:40px}
+.benefits-list{padding:20px 30px;background:linear-gradient(120deg,#ffffff04,transparent)}
+.benefits-list article,.benefits-list article:first-child{padding:24px 0;gap:19px;align-items:center;border-color:#ffffff14}
+.benefit-icon{display:grid;place-items:center;flex-shrink:0;width:60px;height:60px;border-radius:18px;background:linear-gradient(140deg,#e0334730,#c91f2c08);border:1px solid #ee4b5e44;box-shadow:inset 0 1px 0 #ffffff08}
+.benefits-list .benefit-icon svg{margin:0;color:#ff5c6e}
+.benefit-index{display:block;font-size:7px;letter-spacing:1.5px;color:#db7e8d;margin-bottom:7px}
+.benefits-list h3{font-family:'Barlow Condensed';font-size:27px;font-weight:600;line-height:1.1;color:#f5f5f5;margin-bottom:8px}
+.benefits-list article p{font-size:12px;color:#bbc5d4;line-height:1.7}
+.benefits-list .editorial-note{margin:18px 0 0!important;font-size:9px!important;color:#a5afbf}
+@media(max-width:1000px) and (min-width:761px){.methodology .container,.benefits{width:calc(100% - 48px)}.steps{gap:14px}.step-content{padding-inline:18px}.step-content h3{font-size:29px}.step-content p{font-size:12px;min-height:110px}.benefits-intro{padding:40px 25px}.benefits-list{padding-inline:22px}.benefit-icon{width:45px;height:45px;border-radius:14px}.benefits-list h3{font-size:24px}}
+@media(max-width:760px){.methodology .container{width:calc(100% - 32px)}.methodology .section-heading h2{font-size:clamp(38px,9vw,58px)}.method-route{display:none}.steps{gap:24px}.steps .step-visual{aspect-ratio:1.25}.step-content{padding:0 23px 25px;margin-top:-15px}.step-content h3{font-size:34px}.step-content p{min-height:0;font-size:13px}.step-link{font-size:7px}.benefits{width:calc(100% - 32px);margin-block:50px;grid-template-columns:1fr;border-radius:25px}.benefits-intro{padding:35px 24px}.benefits-intro h2{font-size:clamp(39px,9vw,58px)}.benefits-intro .section-label{font-size:6px;letter-spacing:.9px}.benefits-signoff{margin-top:25px}.benefits-list{padding:10px 22px 25px}.benefits-list article,.benefits-list article:first-child{gap:14px;padding:23px 0}.benefit-icon{width:46px;height:46px;border-radius:14px}.benefits-list h3{font-size:25px}.benefits-list article p{font-size:11px}}
