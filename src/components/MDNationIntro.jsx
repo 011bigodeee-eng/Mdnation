@@ -3,8 +3,8 @@ import { site } from '../content';
 import './MDNationIntro.css';
 
 export const INTRO_SESSION_KEY = 'mdnation:intro:seen';
-const DURATION = 2200;
-const REVEAL_PAGE_AT = 1850;
+const DURATION = 3600;
+const REVEAL_PAGE_AT = 3100;
 
 export default function MDNationIntro() {
   const [visible, setVisible] = useState(() => document.documentElement.classList.contains('md-intro-running'));

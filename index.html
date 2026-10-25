@@ -15,7 +15,7 @@
     try{seen=!!sessionStorage.getItem('mdnation:intro:seen')}catch(e){}
     if(seen)return;
     root.classList.add('md-intro-pending','md-intro-running');
-    window.__mdIntroWatchdog=setTimeout(window.__mdIntroRelease,2500);
+    window.__mdIntroWatchdog=setTimeout(window.__mdIntroRelease,4000);
   }catch(e){root.classList.remove('md-intro-pending','md-intro-running')}
 })();
 </script></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
