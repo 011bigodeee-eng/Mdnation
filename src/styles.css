@@ -8,3 +8,18 @@
 .about>*,.benefits>*,.credentials>*,.faq-grid>*{min-width:0}
 @media(max-width:380px){.credentials h2{font-size:34px}.section-label{letter-spacing:1px}.credential-content{gap:14px;padding-left:15px}.hero h1{font-size:51px}}
 .certificates-grid{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.certificate{display:block;border:1px solid #30343b;background:#101216;transition:border-color .2s}.certificate:hover{border-color:#c91f2c}.certificate-image{padding:12px;background:#1a1d22}.certificate-image img{width:100%;height:auto;aspect-ratio:2358/1638;object-fit:contain}.certificate-caption{display:flex;justify-content:space-between;gap:16px;padding:22px 22px 10px}.certificate-caption h3{font-size:26px;font-weight:500;line-height:1.1}.certificate-caption p{font-size:11px;margin-top:8px}.certificate-caption svg{color:var(--red);flex-shrink:0}.certificate-open{display:block;padding:5px 22px 22px;color:#aaaeb6;font-size:8px;letter-spacing:1.2px}@media(max-width:760px){.certificates-grid{grid-template-columns:1fr;gap:22px}.certificate-caption{padding:18px 16px 8px}.certificate-caption h3{font-size:24px}.certificate-open{padding-left:16px}}
+/* Desktop opening follows the available browser viewport. */
+@media(min-width:761px){
+  .header-inner{max-width:none;padding-inline:clamp(32px,5vw,110px)}
+  .hero{min-height:100svh;display:flex;align-items:center}
+  .hero-content{max-width:none;width:100%;padding:clamp(48px,7vh,100px) clamp(32px,5vw,110px) 90px;margin:0}
+  .hero h1{font-size:clamp(64px,min(7.2vw,11vh),132px)}
+  .hero-photo{width:62%}
+  .scroll-hint{left:clamp(32px,5vw,110px)}
+}
+@media(min-width:761px) and (max-height:780px){
+  .hero-content{padding-top:32px;padding-bottom:65px}
+  .hero h1{margin:18px 0}
+  .hero-actions{margin-top:20px;gap:12px}
+  .hero-signature{margin-top:20px}
+}
