@@ -71,3 +71,17 @@
 .journey-caption .ai-label{display:inline-block;border:1px solid #ffffff30;border-radius:999px;background:#090b0e88;padding:5px 8px;font-size:7px;letter-spacing:1px;color:#d7d9de;margin-bottom:12px}
 .journey-card h3{font-size:27px}.journey-card p{color:#b9bdc5;max-width:260px;font-size:11px}
 @media(max-width:760px){.journey-card{min-height:380px}.journey-caption{padding-top:170px}}
+/* Give frequently asked questions clearer contrast and presence. */
+.faq{background:radial-gradient(ellipse at 12% 45%,#c91f2c14,transparent 55%),#12151a}
+.faq-grid{align-items:start}
+.faq-grid>div>p{color:#c2c6ce;font-size:15px}
+.faq-item,.faq-item:first-child{border:1px solid #454a54;border-radius:18px;background:linear-gradient(130deg,#252a32,#1b1f26);margin-bottom:14px;overflow:hidden;box-shadow:inset 0 1px 0 #ffffff08,0 8px 22px #00000016;transition:border-color .2s,box-shadow .2s}
+.faq-item:hover{border-color:#777f8e}
+.faq-item.active{border-color:#e23b49;box-shadow:0 0 22px #c91f2c20}
+.faq-item button{padding:23px 22px;font-size:15px;line-height:1.5;font-weight:600;gap:17px;min-height:86px;color:#f5f5f5}
+.faq-number{color:#d5d9e0;font-size:11px}
+.faq-item button>svg{box-sizing:content-box;width:18px;height:18px;padding:8px;border-radius:50%;color:#fff;background:linear-gradient(145deg,#e33545,#b71927);box-shadow:0 0 14px #c91f2c33}
+.faq-item.active button>svg{color:#fff}
+.faq-item p{padding:0 26px 25px 55px;font-size:14px;line-height:1.85;color:#d0d4dc}
+.faq .section-label{color:#e1e3e8}
+@media(max-width:760px){.faq-item button{padding:20px 15px;gap:11px;font-size:13px;min-height:80px}.faq-item p{padding:0 18px 22px;font-size:13px}.faq-item button>svg{padding:6px;width:16px;height:16px}.faq-number{font-size:10px}.faq-grid>div>p{font-size:14px}}
