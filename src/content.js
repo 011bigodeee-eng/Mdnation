@@ -10,9 +10,9 @@ export const site = {
   methodologyVisual: '/images/metodologia-ia.png',
   methodologyImageDescriptions: ['Ilustração por IA: avaliação inicial com conversa sobre objetivos e ficha de avaliação.', 'Ilustração por IA: organização do planejamento de treinos com tablet e agenda.', 'Ilustração por IA: profissional observando um exercício e acompanhando a evolução.'],
   methodology: [
-    ['Avaliação', 'Entender seu momento, sua rotina e os objetivos que dão sentido ao seu treino.'],
-    ['Planejamento', 'Transformar objetivos em uma direção clara para o seu treinamento.'],
-    ['Acompanhamento', 'Observar a evolução e conversar sobre os próximos passos da sua jornada.'],
+    ['Avaliação', 'Entender seu momento, sua rotina e os objetivos que orientam o seu treino.'],
+    ['Planejamento', 'Transformar seus objetivos em um planejamento claro para o treinamento.'],
+    ['Acompanhamento', 'Observar sua evolução e conversar sobre os próximos passos da jornada.'],
   ],
   benefits: [
     ['Planejamento individualizado', 'Seu ponto de partida e seus objetivos como referência.'],
