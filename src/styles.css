@@ -686,3 +686,15 @@
   .footer-main{flex-wrap:wrap}.footer-connect .social{font-size:13px}.footer-bottom{flex-wrap:wrap;font-size:11px}
   .hero-trainer-card{position:relative;right:auto;bottom:auto;margin:0 32px 65px;max-width:fit-content}.hero{display:block}.hero-content{padding-bottom:30px}
 }
+/* Preserve the full crossed-arm portrait instead of cropping into the torso. */
+@media(min-width:761px){
+  .hero-photo{top:106px;bottom:0;height:auto;width:62%;display:flex;justify-content:center;align-items:flex-start;background:#0b1016}
+  .hero-photo img{width:100%;height:100%;object-fit:contain;object-position:center top}
+  .hero-photo:after{background:linear-gradient(90deg,#090c10 0%,#090c10b3 13%,transparent 44%),linear-gradient(0deg,#090c10 0%,transparent 17%)}
+}
+@media(max-width:760px){
+  .hero-photo{top:88px;height:auto;aspect-ratio:2358/2436;width:100%}
+  .hero-photo img{width:100%;height:100%;object-fit:contain;object-position:center top}
+  .hero-photo:after{background:linear-gradient(0deg,#0c1014 0%,#0c1014b3 13%,transparent 45%)}
+  .hero-content{padding-top:calc(103.3vw - 12px);padding-bottom:65px}
+}
