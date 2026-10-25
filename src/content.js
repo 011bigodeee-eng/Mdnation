@@ -5,7 +5,7 @@ export const site = {
   whatsappNumber: '',
   whatsappMessage: 'Olá, Matheus! Vim pelo site da MD Nation e gostaria de saber mais sobre o acompanhamento online.',
   images: { hero: '/images/IMG_7740.JPG.jpeg', about: '/images/IMG_7739.JPG.jpeg', logo: '/images/IMG_7719.JPG.jpeg' },
-  about: 'Cada pessoa tem um ponto de partida. A MD Nation nasce da proposta de tornar o treinamento mais consciente, com estratégia e orientação profissional. À frente da marca está Matheus Dias, Personal Trainer e Terapeuta Manual. Conheça sua abordagem e converse sobre os seus objetivos.',
+  about: 'Matheus Dias é Personal Trainer e Terapeuta Manual. À frente da MD Nation, propõe um treinamento com estratégia, consciência e orientação profissional. Converse sobre sua rotina e seus objetivos para conhecer sua abordagem.',
   // Propostas editoriais: validar as etapas e os benefícios com o responsável antes da publicação.
   methodologyVisual: '/images/metodologia-ia.png',
   methodologyImageDescriptions: ['Ilustração por IA: avaliação inicial com conversa sobre objetivos e ficha de avaliação.', 'Ilustração por IA: organização do planejamento de treinos com tablet e agenda.', 'Ilustração por IA: profissional observando um exercício e acompanhando a evolução.'],

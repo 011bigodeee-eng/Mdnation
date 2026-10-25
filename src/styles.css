@@ -579,3 +579,31 @@
 @media(max-width:1000px) and (min-width:761px){.method-route{gap:14px}.method-route button{font-size:7px;letter-spacing:1px;padding:14px 12px;gap:10px}.step-content{padding-inline:18px}.step-content h3 button{font-size:24px}.step-content p{min-height:115px;font-size:12px}}
 @media(max-width:760px){.methodology .section-heading h2{font-size:clamp(40px,10vw,62px)}.method-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:25px}.method-route button{padding:11px 7px;gap:5px;font-size:5px;letter-spacing:.3px;min-height:44px;border-radius:9px}.method-route button>span:first-child{font-size:18px}.method-route-light{width:4px;height:4px}.steps .step,.steps .step+.step{border-radius:20px}.steps .step.method-step-active{transform:none}.step-content{padding-inline:22px;margin-top:-26px}.step-content h3 button{font-size:31px}.step-content .step-top>span:first-child{font-size:78px}.step-content p{min-height:0;font-size:13px}.step-content .step-link{font-size:6px}.steps .step-visual{aspect-ratio:1.17}}
 @media(prefers-reduced-motion:reduce){.method-route button[aria-pressed="true"]:after{animation:none;left:25%}}
+/* Professional profile with technological depth and a clearer reading scale. */
+.about{position:relative;grid-template-columns:1fr 1.05fr;border-color:#ef4d6355;background:radial-gradient(ellipse at 100% 15%,#d8203d25,transparent 65%),linear-gradient(120deg,#141d2a,#0d141e);box-shadow:0 30px 80px #00000055,0 0 60px #c91f2c0b;border-radius:26px}
+.about:after{content:'';position:absolute;top:0;left:15%;width:55%;height:2px;background:linear-gradient(90deg,transparent,#ff647d,transparent);box-shadow:0 0 22px #fa3e5b55;pointer-events:none}
+.about-image{min-height:800px;isolation:isolate;background:#0e1520}
+.about-image img{object-position:center 35%}
+.about-image:after{z-index:1;background:linear-gradient(0deg,#0c1420 0%,#0c142066 22%,transparent 65%),linear-gradient(90deg,transparent 80%,#111b2b88)}
+.about-tech-orbit{position:absolute;inset:19px;border:1px solid #ff64802b;border-radius:18px;z-index:2;pointer-events:none}
+.about-tech-orbit:before,.about-tech-orbit:after{content:'';position:absolute;width:35px;height:35px;border-color:#f55170;border-style:solid;filter:drop-shadow(0 0 5px #f5517066)}
+.about-tech-orbit:before{left:-1px;top:-1px;border-width:2px 0 0 2px;border-radius:18px 0 0 0}.about-tech-orbit:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0;border-radius:0 0 18px 0}
+.about-image-tag{top:34px;left:34px;font-size:7px;letter-spacing:1.3px;background:#101a2bc9;border-color:#ffffff35;padding:11px 14px}
+.about-photo-caption{left:38px;bottom:38px;z-index:3;border-left:2px solid #ff4a6d;padding-left:20px}
+.about-photo-caption>span{font-size:clamp(65px,6.2vw,94px);line-height:.85;letter-spacing:-.5px;text-shadow:0 4px 30px #00000066}
+.about-photo-caption>small{font-size:7px;letter-spacing:1.7px;margin-bottom:17px;color:#d4dfef}.about-name-dot{color:#ff4b6c;text-shadow:0 0 20px #f4365b44}
+.about-copy{position:relative;padding:38px 42px 42px;background:linear-gradient(#92a7d005 1px,transparent 1px),linear-gradient(90deg,#92a7d005 1px,transparent 1px);background-size:40px 40px}
+.about-tech-status{display:flex;align-items:center;gap:9px;font-size:6px;letter-spacing:1.2px;color:#aebdd4;padding-bottom:18px;margin-bottom:34px;border-bottom:1px solid #ffffff18}
+.about-tech-status>span{width:5px;height:5px;border-radius:50%;background:#ff536f;box-shadow:0 0 12px #ff536f}
+.about-tech-status>svg{margin-left:auto;color:#f76e87}
+.about-copy .section-label{font-size:7px;letter-spacing:1px;color:#c2cfe2;margin-bottom:25px}
+.about-copy h2{font-size:clamp(46px,4.5vw,69px);line-height:.96}
+.about-copy h2 em{color:#fa4867;text-shadow:0 0 35px #e12c481a}
+.about-copy>p.about-intro{font-size:20px;color:#edf2f9;line-height:1.5;margin:27px 0 18px}
+.about-copy>p{font-size:14px;color:#bccae0;line-height:1.9;margin-bottom:28px}
+.about-professional-details{gap:12px;margin-bottom:27px}
+.about-professional-details>span{padding:18px 14px;border-radius:15px;background:linear-gradient(135deg,#28374d80,#17223599);border:1px solid #aec4e32b;font-size:12px;box-shadow:inset 0 1px 0 #ffffff08}
+.about-professional-details small{font-size:9px;color:#a9bbd5;margin-top:7px}.about-professional-details svg{color:#ff6984;filter:drop-shadow(0 0 7px #f43e5722)}
+.about-actions{gap:15px}.about-actions .button{padding:16px 20px;font-size:9px;min-height:53px;gap:12px}.about-actions .text-link{font-size:8px;letter-spacing:.8px;color:#d0dced}
+@media(max-width:1100px) and (min-width:761px){.about{grid-template-columns:.9fr 1.1fr}.about-copy{padding:30px 26px}.about-copy h2{font-size:49px}.about-image{min-height:830px}.about-copy>p{font-size:13px}.about-copy>p.about-intro{font-size:18px}.about-professional-details{grid-template-columns:1fr}.about-professional-details>span{padding:14px}.about-photo-caption{left:28px;bottom:32px}.about-photo-caption>span{font-size:66px}.about-tech-status{font-size:5px;letter-spacing:.7px}.about-image-tag{left:30px;right:30px;font-size:5px}}
+@media(max-width:760px){.about{grid-template-columns:1fr;border-radius:23px}.about-image{height:490px;min-height:0}.about-image img{object-position:center 32%}.about-image:after{background:linear-gradient(0deg,#111b28 0%,#111b2844 27%,transparent 65%)}.about-tech-orbit{inset:14px;border-radius:15px}.about-image-tag{top:26px;left:26px;font-size:6px;padding:10px 12px}.about-photo-caption{left:28px;bottom:30px;padding-left:16px}.about-photo-caption>span{font-size:76px}.about-photo-caption>small{font-size:6px;letter-spacing:1.2px}.about-copy{padding:24px 23px 32px}.about-tech-status{font-size:5px;letter-spacing:.65px;margin-bottom:25px;padding-bottom:16px}.about-copy .section-label{font-size:6px;letter-spacing:.7px;line-height:1.8;margin-bottom:20px}.about-copy h2{font-size:clamp(43px,11vw,65px)}.about-copy>p.about-intro{font-size:18px;margin:23px 0 16px}.about-copy>p{font-size:13px;line-height:1.9}.about-professional-details{grid-template-columns:1fr;gap:10px}.about-professional-details>span{font-size:13px;padding:17px}.about-professional-details small{font-size:9px}.about-actions{gap:15px}.about-actions .button{font-size:8px;padding:16px 18px}.about-actions .text-link{font-size:7px}}
