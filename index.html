@@ -1,106 +1,21 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#090B0E" />
-    <title>MD Nation | Matheus Dias — Personal Trainer</title>
-    <meta
-      name="description"
-      content="Treinamento estratégico e orientação profissional com Matheus Dias. Conheça a MD Nation e o acompanhamento online."
-    />
-    <meta
-      property="og:title"
-      content="MD Nation — Sua evolução começa com direção"
-    />
-    <meta
-      property="og:description"
-      content="Conheça o acompanhamento online de Matheus Dias, Personal Trainer. CREF 201349-G/SP."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta
-      property="og:image"
-      content="https://mdnation.vercel.app/images/IMG_7740.JPG.jpeg"
-    />
-    <link rel="canonical" href="https://mdnation.vercel.app/" />
-    <link rel="icon" type="image/webp" href="/images/md-nation-logo-420.webp" />
-    <meta property="og:url" content="https://mdnation.vercel.app/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="MD Nation | Matheus Dias — Personal Trainer"
-    />
-    <meta
-      name="twitter:description"
-      content="Treinamento com estratégia e orientação profissional. Conheça o acompanhamento MD Nation."
-    />
-    <meta
-      name="twitter:image"
-      content="https://mdnation.vercel.app/images/IMG_7740.JPG.jpeg"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Matheus Dias",
-        "jobTitle": "Personal Trainer",
-        "url": "https://mdnation.vercel.app/",
-        "sameAs": ["https://www.instagram.com/theusdias_treinador"]
-      }
-    </script>
-    <style>
-      html.md-intro-running {
-        overflow: hidden;
-        scrollbar-gutter: stable;
-      }
-      html.md-intro-running body {
-        overflow: hidden;
-      }
-      html.md-intro-pending {
-        background: #000;
-      }
-      html.md-intro-pending body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background: #000;
-        z-index: 10000;
-      }
-      html.md-intro-pending #md-site-content {
-        visibility: hidden;
-      }
-    </style>
-    <script>
-      (function () {
-        var root = document.documentElement;
-        window.__mdIntroRelease = function () {
-          clearTimeout(window.__mdIntroWatchdog);
-          root.classList.remove("md-intro-pending", "md-intro-running");
-          try {
-            sessionStorage.setItem("mdnation:intro:seen", "1");
-          } catch (e) {}
-          var content = document.getElementById("md-site-content");
-          if (content) content.inert = false;
-          window.dispatchEvent(new Event("md-intro-release"));
-        };
-        try {
-          if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-          var seen = false;
-          try {
-            seen = !!sessionStorage.getItem("mdnation:intro:seen");
-          } catch (e) {}
-          if (seen) return;
-          root.classList.add("md-intro-pending", "md-intro-running");
-          window.__mdIntroWatchdog = setTimeout(window.__mdIntroRelease, 2000);
-        } catch (e) {
-          root.classList.remove("md-intro-pending", "md-intro-running");
-        }
-      })();
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#090B0E"/><title>MD Nation | Matheus Dias — Personal Trainer</title><meta name="description" content="Treinamento estratégico e orientação profissional com Matheus Dias. Conheça a MD Nation e o acompanhamento online."/><meta property="og:title" content="MD Nation — Sua evolução começa com direção"/><meta property="og:description" content="Conheça o acompanhamento online de Matheus Dias, Personal Trainer. CREF 201349-G/SP."/><meta property="og:type" content="website"/><meta property="og:locale" content="pt_BR"/><meta property="og:image" content="/images/IMG_7740.JPG.jpeg"/><style>html.md-intro-running{overflow:hidden;scrollbar-gutter:stable}html.md-intro-running body{overflow:hidden}html.md-intro-pending{background:#000}html.md-intro-pending body::before{content:'';position:fixed;inset:0;background:#000;z-index:10000}html.md-intro-pending #md-site-content{visibility:hidden}</style><script>
+(function(){
+  var root=document.documentElement;
+  window.__mdIntroRelease=function(){
+    clearTimeout(window.__mdIntroWatchdog);
+    root.classList.remove('md-intro-pending','md-intro-running');
+    try{sessionStorage.setItem('mdnation:intro:seen','1')}catch(e){}
+    var content=document.getElementById('md-site-content');
+    if(content)content.inert=false;
+    window.dispatchEvent(new Event('md-intro-release'));
+  };
+  try{
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var seen=false;
+    try{seen=!!sessionStorage.getItem('mdnation:intro:seen')}catch(e){}
+    if(seen)return;
+    root.classList.add('md-intro-pending','md-intro-running');
+    window.__mdIntroWatchdog=setTimeout(window.__mdIntroRelease,4000);
+  }catch(e){root.classList.remove('md-intro-pending','md-intro-running')}
+})();
+</script></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
