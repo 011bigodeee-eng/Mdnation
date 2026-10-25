@@ -622,3 +622,67 @@
 @media(min-width:1101px) and (max-width:1300px){.desktop-nav a{font-size:13px;padding:15px 14px}.header-cta{gap:12px;padding-left:17px}.header-cta-copy>span{font-size:10px}.header .logo-brand{font-size:30px}.header .logo-byline{font-size:6px}}
 @media(min-width:761px) and (max-width:1100px){.header{padding:12px 18px}.header-inner{gap:16px;padding:0 14px}.header .logo-emblem{width:49px;height:49px}.header .logo-brand{font-size:29px}.header .logo-byline{font-size:5px;letter-spacing:1.5px}.header .logo{gap:10px}.desktop-nav a{font-size:12px;padding:14px 12px}.desktop-nav{gap:2px}.header-cta{display:none}}
 @media(max-width:760px){.header{padding:8px 10px;height:88px}.header-inner{height:70px;padding:0 12px;border-radius:17px;gap:12px}.header .logo-emblem{width:46px;height:46px}.header .logo{gap:11px}.header .logo-brand{font-size:29px;letter-spacing:1px}.header .logo-byline{font-size:5px;letter-spacing:1.4px}.header .logo-wordmark{gap:7px}.menu-toggle{background:linear-gradient(145deg,#e5334b22,#18253c);border-color:#f14d6544;color:#ff7b90;box-shadow:inset 0 1px 0 #ffffff0c}.header-inner:after{width:35%;left:15px}}
+/* Desktop reading scale: body copy 16px, supporting text at least 12px. */
+@media(min-width:761px){
+  p,.hero p,.hero-content>p,.about-copy>p,.step-content p,.benefits .benefits-intro>p,.benefits-list article p,.journey-tech .journey-cinema-content p,.final-cta .contact-main>p{font-size:16px;line-height:1.85}
+  .section-label,.about-copy .section-label,.benefits-intro .section-label,.contact-main .section-label,.faq-intro .section-label{font-size:12px;letter-spacing:1px;line-height:1.6;flex-wrap:wrap}
+  .section-number{font-size:12px}
+  .eyebrow,.hero .eyebrow{font-size:12px;letter-spacing:1.2px}
+  .button,.hero-actions .button,.about-actions .button,.journey-stage-story .button,.benefits .button{font-size:13px;letter-spacing:.5px}
+  .text-link,.about-actions .text-link,.hero-actions .text-link{font-size:12px;letter-spacing:.6px}
+  .header .logo-byline,.logo-byline{font-size:10px;letter-spacing:1px}
+  .desktop-nav a{font-size:15px;padding-inline:15px}
+  .header-cta-copy>span{font-size:12px;letter-spacing:.4px}
+  .hero-pillars>span,.scroll-hint,.photo-caption,.photo-caption small{font-size:11px;letter-spacing:1px}
+  .hero-trainer-card small{font-size:11px;letter-spacing:.8px}
+  .hero-trainer-card div>span{font-size:12px;line-height:1.6}
+  .about-tech-status,.about-image-tag,.about-photo-caption>small{font-size:11px;letter-spacing:.7px;line-height:1.6}
+  .about-copy>p.about-intro{font-size:21px}
+  .about-professional-details>span{font-size:14px}
+  .about-professional-details small{font-size:12px}
+  .methodology .section-heading>p,.results .section-heading>p,.journey-editorial-heading>p{font-size:15px}
+  .method-route button{font-size:12px;letter-spacing:1px;gap:12px}
+  .method-image-hud{font-size:11px;letter-spacing:.8px}
+  .step-content .step-link{font-size:11px;letter-spacing:.4px}
+  .benefit-index,.benefits-signoff{font-size:12px;letter-spacing:.8px}
+  .benefits-list h3{font-size:29px}
+  .editorial-note,.methodology .editorial-note,.benefits-list .editorial-note{font-size:12px!important;line-height:1.8}
+  .journey-tech-status,.journey-tech .journey-cinema-eyebrow{font-size:11px;letter-spacing:1px;line-height:1.6}
+  .journey-tech .journey-cinema-cta{font-size:12px;letter-spacing:.4px;max-width:100%}
+  .journey-tech .journey-cinema-nav strong{font-size:15px}
+  .journey-tech .journey-cinema-nav small{font-size:11px;letter-spacing:.8px}
+  .journey-cinema-disclaimer{font-size:12px}
+  .credentials-signature p{font-size:13px}.credentials-signature small{font-size:11px;letter-spacing:.6px}
+  .credentials-kicker,.credential-feature-top{font-size:11px;letter-spacing:.8px;line-height:1.6}
+  .credentials-selector small{font-size:12px;line-height:1.7}
+  .credentials-selector button{border-radius:22px;padding:18px;min-height:112px}
+  .credential-feature-caption p,.credentials-note{font-size:13px}
+  .credential-feature-image>span,.certificate-dialog-header small,.certificate-dialog>a{font-size:12px;letter-spacing:.5px}
+  .credential-feature-count small{font-size:13px}
+  .faq-grid .faq-intro>p,.faq-collection .faq-item p{font-size:16px}
+  .faq-collection .faq-item button{font-size:17px}
+  .faq-collection-header,.faq-collection-footer,.faq-answer-contact{font-size:11px;letter-spacing:.6px;line-height:1.8}
+  .faq-contact small{font-size:11px;letter-spacing:.7px}.faq-contact strong{font-size:15px}
+  .contact-portrait-caption small,.contact-primary small,.contact-bottomline>span{font-size:11px;letter-spacing:.7px;line-height:1.6}
+  .final-cta .contact-bottomline>.contact-pending{font-size:12px}
+  .footer-tagline,.footer-links>span,.footer-connect>span{font-size:11px;letter-spacing:.8px;line-height:1.7}
+  .footer-links>a,.footer-connect .social{font-size:14px}.footer-connect p{font-size:13px}.footer-bottom{font-size:12px;line-height:1.7}
+  .ribbon-brand small{font-size:10px;letter-spacing:1px}.ribbon-word-index{font-size:11px}
+  .about-tech-status{flex-wrap:wrap}
+  .hero-trainer-card{max-width:45%;right:5%;padding:20px}
+  .contact-main .contact-primary{gap:10px}.contact-primary strong{font-size:27px}
+}
+@media(min-width:761px) and (max-width:1100px){
+  .header-inner{gap:12px}.desktop-nav a{font-size:13px;padding-inline:10px}.header .logo-byline{font-size:8px;letter-spacing:.4px}
+  .section-label,.about-copy .section-label,.benefits-intro .section-label{font-size:11px}
+  .hero h1{font-size:clamp(58px,7vw,76px)}
+  .about-professional-details{grid-template-columns:1fr}.about-image{min-height:100%;height:auto}
+  .method-route button{font-size:10px;padding:12px;gap:8px;letter-spacing:.4px}.step-content .step-link{font-size:9px}
+  .steps{gap:14px}.step-content{padding-inline:17px}.step-content p{min-height:145px}
+  .benefits{grid-template-columns:1fr}.benefits-intro{padding:40px}.benefits-list{padding:10px 40px 30px}
+  .credentials-heading{align-items:flex-start}.credentials-signature{max-width:310px;flex-shrink:1}
+  .credentials-selector button{gap:10px;padding:15px}.credentials-selector strong{font-size:24px}
+  .faq-grid{grid-template-columns:1fr;gap:35px}.faq-intro{max-width:650px}.faq-contact{max-width:400px}
+  .footer-main{flex-wrap:wrap}.footer-connect .social{font-size:13px}.footer-bottom{flex-wrap:wrap;font-size:11px}
+  .hero-trainer-card{position:relative;right:auto;bottom:auto;margin:0 32px 65px;max-width:fit-content}.hero{display:block}.hero-content{padding-bottom:30px}
+}
