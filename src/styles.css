@@ -686,3 +686,16 @@
   .footer-main{flex-wrap:wrap}.footer-connect .social{font-size:13px}.footer-bottom{flex-wrap:wrap;font-size:11px}
   .hero-trainer-card{position:relative;right:auto;bottom:auto;margin:0 32px 65px;max-width:fit-content}.hero{display:block}.hero-content{padding-bottom:30px}
 }
+/* Full-width desktop navigation with stronger brand scale and readable links. */
+@media(min-width:1101px){
+  .header{height:108px;padding:0;background:#090e16ee;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff18}
+  .header-inner{height:108px;width:calc(100% - 96px);max-width:none;margin:auto;padding:0;gap:32px;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none}
+  .header-inner:after{left:0;bottom:-1px;width:210px;height:2px;background:linear-gradient(90deg,#ff4968,transparent);box-shadow:0 0 15px #e5344b44}
+  .header .logo{gap:16px}.header .logo-emblem{width:66px;height:66px;box-shadow:0 0 25px #d52a4012}.header .logo-brand{font-size:38px;letter-spacing:1.5px}.header .logo-byline{font-size:10px;letter-spacing:1px}.header .logo-wordmark{gap:9px}
+  .desktop-nav{gap:10px}.desktop-nav a{padding:18px 22px;font-size:16px;font-weight:500;letter-spacing:0;border-radius:12px;color:#c8d2e2}
+  .desktop-nav a:hover{background:#ffffff07;border-color:#ffffff20;color:#fff}
+  .desktop-nav a.nav-active{background:#e9314a10;border-color:#ff62753d;box-shadow:inset 0 -2px 0 #f94462;color:#fff}
+  .header-cta{min-height:60px;padding:8px 9px 8px 24px;gap:20px;border-color:#ff809080;background:linear-gradient(120deg,#f03854,#b81835);box-shadow:inset 0 1px 0 #ffffff33,0 5px 25px #c91f2c20}
+  .header-cta-copy>span{font-size:13px;letter-spacing:.4px}.header-cta>svg{padding:12px;width:18px;height:18px}
+}
+@media(min-width:1101px) and (max-width:1350px){.header-inner{width:calc(100% - 64px);gap:20px}.header .logo-brand{font-size:33px}.header .logo-emblem{width:58px;height:58px}.header .logo-byline{font-size:9px}.desktop-nav{gap:0}.desktop-nav a{font-size:14px;padding:17px 14px}.header-cta{padding-left:18px;gap:13px}.header-cta-copy>span{font-size:11px}}
