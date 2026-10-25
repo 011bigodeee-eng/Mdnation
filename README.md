@@ -23,7 +23,7 @@ npm run preview
 ## Conteúdo e publicação
 
 - Edite os dados, imagens, textos, metodologia, benefícios e FAQ em `src/content.js`.
-- Preencha `site.whatsappNumber` com o número verdadeiro, incluindo país e DDD, somente dígitos. A mensagem já está configurada. Sem número, os CTAs levam à seção de contato, que informa a pendência e oferece o Instagram real.
+- WhatsApp configurado em `site.whatsappNumber`: +55 16 99645-5766. Os CTAs usam esse número com a mensagem inicial já preparada. Para trocar o número, mantenha somente dígitos, incluindo país e DDD.
 - Valide metodologia, benefícios, respostas do FAQ e apresentação profissional com Matheus antes de publicar.
 - Envie fotos de resultados e depoimentos reais autorizados. A galeria de resultados mantém espaços reservados, sem exemplos fictícios. Três certificados reais recebidos foram incluídos na seção de certificações.
 - As imagens originais estão em `public/images/`, com os nomes recebidos no ZIP, incluindo `.JPG.jpeg`. Os arquivos originais foram preservados.

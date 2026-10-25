@@ -2,7 +2,7 @@ export const site = {
   name: 'MD NATION', trainer: 'Matheus Dias', cref: '201349-G/SP',
   instagram: 'https://www.instagram.com/theusdias_treinador',
   // Insira o número real com código de país e DDD, somente dígitos.
-  whatsappNumber: '',
+  whatsappNumber: '5516996455766',
   whatsappMessage: 'Olá, Matheus! Vim pelo site da MD Nation e gostaria de saber mais sobre o acompanhamento online.',
   images: { hero: '/images/IMG_7740.JPG.jpeg', about: '/images/IMG_7739.JPG.jpeg', logo: '/images/IMG_7719.JPG.jpeg' },
   about: 'Matheus Dias é Personal Trainer e Terapeuta Manual. À frente da MD Nation, propõe um treinamento com estratégia, consciência e orientação profissional. Converse sobre sua rotina e seus objetivos para conhecer sua abordagem.',
@@ -34,7 +34,7 @@ export const site = {
   faq: [
     ['Como funciona o acompanhamento online?', 'Entre em contato com Matheus para conhecer a proposta de acompanhamento, os canais de orientação e o formato disponível para a sua rotina.'],
     ['O treinamento é individualizado?', 'Converse com Matheus sobre seus objetivos e necessidades para entender como o planejamento pode ser direcionado ao seu perfil. Os detalhes serão apresentados no contato inicial.'],
-    ['Como solicitar mais informações?', 'Use o botão de contato quando o WhatsApp estiver disponível ou envie uma mensagem pelo Instagram @theusdias_treinador.'],
+    ['Como solicitar mais informações?', 'Use os botões de contato para falar com Matheus pelo WhatsApp ou envie uma mensagem pelo Instagram @theusdias_treinador.'],
     ['Como começar?', 'O primeiro passo é conversar com Matheus sobre seu momento e seus objetivos. Nesse contato, você poderá esclarecer o formato do acompanhamento e as condições disponíveis.'],
   ],
 };
