@@ -28,7 +28,7 @@ npm run preview
 - Envie fotos de resultados e depoimentos reais autorizados. A galeria de resultados mantém espaços reservados, sem exemplos fictícios. Três certificados reais recebidos foram incluídos na seção de certificações.
 - As imagens originais estão em `public/images/`, com os nomes recebidos no ZIP, incluindo `.JPG.jpeg`. Os arquivos originais foram preservados.
 - Configure o domínio definitivo e a URL absoluta de `og:image` em `index.html` antes de compartilhar em redes sociais.
-- O build estático fica em `dist/`, pronto para hospedagem estática. Fontes usam Google Fonts com fallback local.
+- O build estático fica em `dist/`, pronto para hospedagem estática. Fontes Inter e Barlow Condensed são hospedadas no próprio projeto, sem dependência do Google Fonts.
 
 ## Componentes
 
