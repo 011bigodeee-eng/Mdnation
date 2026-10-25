@@ -1,6 +1,6 @@
 # MD Nation
 
-Landing page de Matheus Dias em React, Vite, Tailwind CSS e Lucide React.
+Landing page de Matheus Dias, reformulada sobre o projeto existente com React, Vite, Tailwind CSS e Lucide React. Sem novos frameworks ou dependências.
 
 ## Executar
 
@@ -11,35 +11,37 @@ npm install
 npm run dev
 ```
 
-No ambiente de nuvem, se o cache padrão do npm não for gravável, use `npm install --cache /tmp/md-npm-cache`.
+Para reproduzir as versões instaladas, use `npm ci`. Neste ambiente, se o cache padrão não for gravável, acrescente `--cache /tmp/md-npm-cache`.
 
 ```sh
 npm run build
 npm run preview
 ```
 
-`npm ci` reproduz as dependências do lockfile em instalações posteriores.
+O build para hospedagem estática fica em `dist/`.
 
-## Conteúdo e publicação
+## Arquivos e conteúdo
 
-- Edite os dados, imagens, textos, metodologia, benefícios e FAQ em `src/content.js`.
-- WhatsApp configurado em `site.whatsappNumber`: +55 16 99645-5766. Os CTAs usam esse número com a mensagem inicial já preparada. Para trocar o número, mantenha somente dígitos, incluindo país e DDD.
-- Valide metodologia, benefícios, respostas do FAQ e apresentação profissional com Matheus antes de publicar.
-- Envie fotos de resultados e depoimentos reais autorizados. A galeria de resultados mantém espaços reservados, sem exemplos fictícios. Três certificados reais recebidos foram incluídos na seção de certificações.
-- As imagens originais estão em `public/images/`, com os nomes recebidos no ZIP, incluindo `.JPG.jpeg`. Os arquivos originais foram preservados.
-- Configure o domínio definitivo e a URL absoluta de `og:image` em `index.html` antes de compartilhar em redes sociais.
-- O build estático fica em `dist/`, pronto para hospedagem estática. Fontes Inter e Barlow Condensed são hospedadas no próprio projeto, sem dependência do Google Fonts.
+- `src/main.jsx`: cabeçalho, hero, apresentação, benefícios, jornada ilustrativa, certificados, FAQ, contato e rodapé.
+- `src/styles.css`: identidade visual e layout mobile-first consolidados, sem os antigos blocos de sobrescritas.
+- `src/components/Methodology.jsx` e `Methodology.css`: três etapas do acompanhamento, com um único CTA ao final e entrada discreta ao rolar.
+- `src/components/Credentials.css`: galeria dos documentos reais; visualização ampliada utiliza dialog nativo, Escape e restauração do foco.
+- `src/components/MDNationIntro.jsx` e seu CSS: vinheta de 1,9 segundo, com logo oficial, luz vermelha e transição. Uma vez por sessão (`mdnation:intro:seen`), opção de pular e suporte a movimento reduzido. O bootstrap de `index.html` libera o acesso em até 2 segundos mesmo se a montagem do React falhar. Para rever, remova a chave da sessão e recarregue.
+- `src/content.js`: dados reais, links, textos e imagens editáveis.
+- `index.html`: metadados, canonical e Open Graph para `https://mdnation.vercel.app/`.
 
-## Componentes
+WhatsApp configurado: **+55 16 99645-5766**. Os botões utilizam o número e a mensagem inicial centralizados em `src/content.js`.
 
-`Header`, `Hero`, `BrandStrip`, `About`, `Methodology`, `Benefits`, `Results`, `Credentials`, `FAQ`, `FinalCTA` e `Footer` estão em `src/main.jsx`. Layout e animações estão em `src/styles.css`, com suporte a movimento reduzido, menu por teclado, FAQ acessível e imagens abaixo da dobra com lazy loading.
+## Imagens e documentos
 
-## Certificados recebidos
+Os arquivos originais recebidos permanecem intactos em `public/images/`. A interface utiliza versões WebP mais leves para fotos e miniaturas. A hero escolhe entre 800 e 1400 px via srcset. Os certificados ampliados e seus links continuam usando os documentos JPEG originais, sem distorção. As fontes são hospedadas no próprio projeto.
 
-Incluídos: `IMG_7748.JPG.jpeg` (workshop de membros inferiores), `IMG_7747.JPG.jpeg` (ENAF) e `IMG_7746.JPG.jpeg` (Personal Faixa Preta). O responsável confirmou que o último também pertence ao Matheus Dias da MD Nation, apesar da diferença de nome no documento. Todos os originais foram preservados.
+Certificados: `IMG_7748.JPG.jpeg` (workshop de membros inferiores), `IMG_7747.JPG.jpeg` (ENAF) e `IMG_7746.JPG.jpeg` (Personal Faixa Preta). O responsável confirmou que o último também pertence ao Matheus Dias da MD Nation, apesar da diferença de nome no documento.
 
-## Abertura cinematográfica
+As cenas de metodologia e jornada são ilustrações por IA, identificadas na página. Não são resultados ou depoimentos de alunos.
 
-`src/components/MDNationIntro.jsx` e seu CSS implementam uma vinheta de 3,6 segundos: preto absoluto, feixe vermelho, revelação do logotipo oficial, reflexão vermelha e transição para a página. Não há partículas, texto adicional nem dependência de animação. Apenas `transform` e `opacity` são animados.
+## Validação e publicação
 
-A chave `mdnation:intro:seen` do sessionStorage evita repetir a abertura na mesma sessão. Para rever em desenvolvimento, remova essa chave nas ferramentas do navegador e recarregue, ou use uma nova sessão. Com `prefers-reduced-motion: reduce`, a página abre imediatamente. Pular introdução e Escape encerram a vinheta. O bootstrap de `index.html` impede o flash inicial e libera a página em até 4 segundos mesmo se o React não carregar. A liberação remove a camada e o bloqueio de scroll e teclado independentemente de uma atualização React. Falha no carregamento do logotipo também encerra a abertura. Com armazenamento indisponível, o site continua acessível, mas a vinheta pode repetir em outra navegação.
+Antes da publicação, Matheus deve confirmar os textos de metodologia, benefícios e FAQ e fornecer eventuais resultados e depoimentos reais autorizados. Não foram adicionadas condições comerciais, promessas de resultado nem qualificações fictícias.
+
+O redesign deve ser conferido em 320, 375, 390, 430, 768, 1024 e 1440 px, incluindo menu, FAQ, galeria, WhatsApp, movimento reduzido e sessão da abertura. Os arquivos de teste e o relatório de execução são mantidos em `validation/`. Publicar a branch não substitui confirmar o deploy na Vercel. Contato e redes sociais são validados pelos destinos dos links; não foram enviadas mensagens.
