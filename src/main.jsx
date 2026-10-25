@@ -16,7 +16,7 @@ function ContactButton({ children = 'QUERO COMEÇAR', className = '' }) {
   return <a className={`button ${className}`} href={whatsappUrl || '#contato'} target={whatsappUrl ? '_blank' : undefined} rel={whatsappUrl ? 'noopener noreferrer' : undefined}>{children}<ArrowUpRight size={18}/></a>;
 }
 function SectionLabel({ children, number }) { return <div className="section-label"><span className="tiny-square"/>{children}<span className="section-number">/ {number}</span></div>; }
-function Logo() { return <a href="#inicio" className="logo" aria-label="MD Nation — início"><img src={site.images.logo} alt="Logotipo oficial MD Nation" width="72" height="72"/><span>MD<span className="logo-light"> NATION</span><small>BY MATHEUS DIAS</small></span></a>; }
+function Logo() { return <a href="#inicio" className="logo" aria-label="MD Nation — início"><span className="logo-emblem"><img src={site.images.logo} alt="Logotipo oficial MD Nation" width="72" height="72"/></span><span className="logo-wordmark"><span className="logo-brand">MD <span className="logo-light">NATION</span><span className="logo-brand-dot" aria-hidden="true"/></span><span className="logo-byline"><i aria-hidden="true"/>BY MATHEUS DIAS</span></span></a>; }
 function Header() {
  const [open, setOpen] = useState(false); const [active, setActive] = useState(''); const toggleRef = useRef(null);
  const links = [['sobre','Sobre Matheus'],['metodologia','Metodologia'],['resultados','Resultados'],['faq','Dúvidas']];
