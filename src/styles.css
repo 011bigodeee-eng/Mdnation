@@ -380,3 +380,30 @@
 .faq-collection-footer .tiny-square{flex-shrink:0}
 @media(max-width:1000px){.faq-grid{width:calc(100% - 48px);gap:35px}.faq-collection{padding:25px 22px 20px}.faq-collection .faq-item button{font-size:14px;gap:13px}.faq-collection-header{font-size:6px;letter-spacing:1px}.faq-contact{padding:15px;gap:10px}.faq-contact strong{font-size:11px}}
 @media(max-width:760px){.faq-grid{width:calc(100% - 32px);grid-template-columns:1fr;gap:32px}.faq-intro{padding:0 8px}.faq-intro h2{font-size:clamp(50px,12vw,75px)}.faq-intro .section-label{font-size:7px}.faq-grid .faq-intro>p{font-size:14px}.faq-contact{max-width:100%;margin-top:24px;padding:17px}.faq-contact strong{font-size:12px}.faq-background-mark{font-size:300px;right:10px}.faq-collection{padding:22px 18px 18px;border-radius:22px}.faq-collection-header{font-size:6px;letter-spacing:.8px;padding-bottom:20px}.faq-collection .faq-item button{padding:22px 0;font-size:13px;gap:12px;min-height:90px}.faq-collection .faq-number{font-size:24px}.faq-toggle-icon{width:30px;height:30px}.faq-collection .faq-item p{padding:0 0 15px 35px;font-size:12px}.faq-answer-contact{padding:0 0 23px 35px;font-size:7px}.faq-collection-footer{font-size:5px;letter-spacing:1px}}
+/* A portrait-led closing statement, without nested cards. */
+.final-cta{padding-block:70px;background:radial-gradient(ellipse at 75% 70%,#a9192d19,transparent 55%),#090b0e}
+.contact-panel{padding:0;grid-template-columns:1fr 1.05fr;gap:0;border:1px solid #ffffff20;border-radius:30px;background:radial-gradient(ellipse at 100% 100%,#bd1a3030,transparent 65%),#11151c;min-height:690px;isolation:isolate}
+.contact-portrait{position:relative;min-height:690px;overflow:hidden;align-self:stretch}
+.contact-portrait>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.contact-portrait:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,#11151c),linear-gradient(0deg,#11151cf5,transparent 55%)}
+.contact-portrait-word{position:absolute;z-index:1;left:-10px;bottom:75px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Barlow Condensed';font-size:100px;font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px #ffffff25;letter-spacing:4px;pointer-events:none}
+.contact-portrait-caption{position:absolute;bottom:40px;left:45px;z-index:2;padding-left:17px;border-left:3px solid #f83d56}
+.contact-portrait-caption>span{display:block;font-family:'Barlow Condensed';font-size:37px;font-weight:600;letter-spacing:1px;line-height:1}
+.contact-portrait-caption small{display:block;font-size:7px;letter-spacing:1.3px;color:#cbd2df;margin-top:10px}
+.contact-main{padding:55px 45px 45px 20px}
+.contact-main:before{display:none}
+.final-cta h2{font-size:clamp(45px,4.4vw,72px);line-height:.98;letter-spacing:-.4px}
+.contact-title-outline{color:transparent;-webkit-text-stroke:1px #e2e7ef}
+.final-cta h2 em{color:#f43c55}
+.final-cta .contact-main>p{font-size:14px;color:#c4cedd;line-height:1.9;margin:26px 0}
+.contact-main .contact-primary{max-width:480px;border-radius:999px;padding:9px 10px 9px 12px;gap:14px;min-height:78px;border-color:#ff92a077;background:linear-gradient(110deg,#f23b53,#b51330);box-shadow:inset 0 1px 0 #ffffff33,0 10px 35px #c91f2c22}
+.contact-primary-icon{border:0;background:#ffffff13;width:52px;height:52px}
+.contact-primary strong{font-size:29px;letter-spacing:.5px}
+.contact-primary small{font-size:6px;letter-spacing:1.2px}
+.contact-arrow{display:grid;place-items:center;margin-left:auto;flex-shrink:0;width:49px;height:49px;border-radius:50%;background:#fff;color:#c51b35;transition:transform .25s}
+.contact-primary:hover .contact-arrow{transform:rotate(45deg)}
+.contact-bottomline{max-width:480px;border-top:1px solid #ffffff1c;padding-top:20px;margin-top:26px}
+.contact-bottomline>span{display:flex;align-items:center;gap:8px;font-size:7px;letter-spacing:1px;color:#d0d9e6}.contact-bottomline>span svg{color:#ff647a;flex-shrink:0}
+.final-cta .contact-bottomline>.contact-pending{display:flex;justify-content:flex-start;align-items:center;gap:7px;font-size:8px;line-height:1.8;margin:14px 0 0;color:#a8b4c8}
+@media(max-width:1100px) and (min-width:761px){.contact-panel{min-height:650px;grid-template-columns:.9fr 1.1fr}.contact-portrait{min-height:650px}.contact-main{padding:40px 28px 35px 5px}.final-cta h2{font-size:51px}.contact-primary strong{font-size:23px}.contact-main .contact-primary{gap:9px}.contact-arrow{width:40px;height:40px}.contact-primary-icon{width:40px;height:40px}.contact-portrait-caption{left:25px;bottom:30px}.contact-portrait-caption>span{font-size:30px}.contact-portrait-caption small{font-size:6px}.final-cta .contact-main>p{font-size:13px}}
+@media(max-width:760px){.final-cta{padding-block:45px}.contact-panel{grid-template-columns:1fr;min-height:0;border-radius:24px}.contact-portrait{height:390px;min-height:0}.contact-portrait>img{object-position:center 21%}.contact-portrait:after{background:linear-gradient(0deg,#11151c,transparent 55%)}.contact-portrait-caption{left:25px;bottom:25px}.contact-portrait-caption>span{font-size:33px}.contact-portrait-caption small{font-size:6px}.contact-portrait-word{font-size:74px;left:0;bottom:60px}.contact-main{padding:20px 22px 30px}.contact-main .section-label{font-size:6px;letter-spacing:1px}.final-cta h2{font-size:clamp(43px,10.5vw,65px)}.final-cta .contact-main>p{font-size:12px;line-height:1.9;margin:23px 0}.contact-main .contact-primary{min-height:66px;padding:8px;gap:8px}.contact-primary-icon{width:35px;height:35px}.contact-primary-icon svg{width:20px;height:20px}.contact-primary strong{font-size:clamp(19px,4.8vw,26px)}.contact-primary small{font-size:5px;letter-spacing:.8px}.contact-arrow{width:36px;height:36px}.contact-arrow svg{width:21px;height:21px}.contact-bottomline>span{font-size:6px;letter-spacing:.7px}.final-cta .contact-bottomline>.contact-pending{font-size:7px;align-items:flex-start}}
